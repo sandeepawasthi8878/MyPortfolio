@@ -31,7 +31,7 @@ body {
 }
 
 section {
-    min-height: 101vh;
+    min-height: 100vh;
     padding: 10rem 9% 2rem;
 }
 
@@ -172,13 +172,7 @@ span {
 
 }
 
-.about-img img {
-        width: 22vw;
-        height: 22vw;
-        border-radius: 50%;
-        object-fit: cover;
-    
-}
+
 
 .heading {
     text-align: center;
@@ -512,11 +506,13 @@ span {
         width: 80vw;
         margin-top: 8rem;
     }
-
-    .about-img img {
-        width: 100vw;
-        margin-top: 4rem;
+    #home {
+        margin-top: 2rem; /* Adjust this value as needed */
     }
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Stacks items in a single column */
+    }
+  
 }
 
 @media (max-width: 450px) {
@@ -526,5 +522,8 @@ span {
 
     .contact form .input-box input {
         width: 100%;
+    }
+    .portfolio-container {
+        grid-template-columns: 1fr; /* Stacks items in a single column */
     }
 }
